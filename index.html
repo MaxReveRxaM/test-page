@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="./img/favicon.png" />
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="icon" type="image/png" href="./img/main_img/favicon.png"/>
+	<link rel="icon" type="image/png" href="./img/main_img/favicon.png" />
 	<title>LoremIpsum</title>
 </head>
 
@@ -72,8 +72,10 @@
 				</div>
 				<div class="order__list-items">
 					<div class="order__list-buttons buttons">
-						<button onclick="sliderLeft()" class="buttons__shift left"><img src="./img/ordering/left.svg" alt="left"></button>
-						<button onclick="sliderRight(1)" class="buttons__shift right"><img src="./img/ordering/right.svg" alt="right"></button>
+						<button onclick="sliderLeft()" class="buttons__shift left"><img src="./img/ordering/left.svg"
+								alt="left"></button>
+						<button onclick="sliderRight(1)" class="buttons__shift right"><img
+								src="./img/ordering/right.svg" alt="right"></button>
 					</div>
 					<ul id="slider" class="order__list">
 						<li class="order__item">
@@ -104,21 +106,33 @@
 					</ul>
 				</div>
 				<form class="order_form form" action="#">
-					<select name="SELECT" class="form__select _one-third" required>
-						<option value="" hidden>Выберите тип системы</option>
-						<option value="1">Sed ut perspiciatis</option>
-						<option value="2">Nemo enim ipsam</option>
-						<option value="3">Et harum quidem</option>
-						<option value="4">Temporibus autem</option>
-						<option value="5">Itaque earum rerum</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-						<option value="more">more option</option>
-					</select>
+					<div id="wrap-select" class="form__select-wrap _one-third">
+						<div id="select-span" class="from__select-span"><span>Выберите тип системы</span></div>
+						<select id="select" name="SELECT" class="form__select" required="" size="10">
+							<option value="" hidden="" selected="selected">Выберите тип системы</option>
+							<option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+							<option value="Nemo enim ipsam">Nemo enim ipsam</option>
+							<option value="Et harum quidem">Et harum quidem</option>
+							<option value="Temporibus autem">Temporibus autem</option>
+							<option value="Itaque earum rerum">Itaque earum rerum</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+							<option value="more">more option</option>
+						</select>
+					</div>
 					<div class="form__wrap-input _one-third">
 						<input class="form__email _input-form" type="email" name="MAIL" placeholder="Ваш e-mail">
 					</div>
@@ -132,7 +146,8 @@
 							oninput="rangeValue()" value="17">
 					</div>
 					<div class="form__upload-file _one-third">
-						<label for="upload" class="form__file-label"><img class="form__file-icon" src="./img/ordering/upload_icon.svg" alt="upload_icon"> Прикрепить файл</label>
+						<label for="upload" class="form__file-label"><img class="form__file-icon"
+								src="./img/ordering/upload_icon.svg" alt="upload_icon"> Прикрепить файл</label>
 						<input id="upload" class="form__file" type="file" name="FILE">
 					</div>
 					<div class="form__submit-wrap"><input class="form__submit _blue-button" type="submit"
@@ -150,15 +165,24 @@
 			</div>
 			<div class="footer__wrap-payments">
 				<ul class="footer__payments-list">
-					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img class="footer__item-img" src="./img/links/qiwi.svg" alt="qiwi"> Qiwi wallet</a></li>
-					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img class="footer__item-img" src="./img/links/yandex.svg" alt="yandex"> Yandex Money</a></li>
-					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img class="footer__item-img" src="./img/links/webmoney.svg" alt="webmoney"> Web Money</a></li>
+					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img
+								class="footer__item-img" src="./img/links/qiwi.svg" alt="qiwi"> Qiwi wallet</a></li>
+					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img
+								class="footer__item-img" src="./img/links/yandex.svg" alt="yandex"> Yandex Money</a>
+					</li>
+					<li class="footer__item payment-item"><a class="footer__item-link" href="tel:8800"><img
+								class="footer__item-img" src="./img/links/webmoney.svg" alt="webmoney"> Web Money</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__wrap-contacts">
 				<ul class="footer__contacts-list">
-					<li class="footer__item contact-item"><a class="footer__item-link" href="mailto:info@ipsum228.com"><img class="footer__item-img" src="./img/links/mail.svg" alt="mail"> info@ipsum228.com</a></li>
-					<li class="footer__item contact-item"><a class="footer__item-link" href="https://vk.com/feed" target="_blank"><img class="footer__item-img" src="./img/links/vk.svg" alt="vk"> Мы вконтакте</a></li>
+					<li class="footer__item contact-item"><a class="footer__item-link"
+							href="mailto:info@ipsum228.com"><img class="footer__item-img" src="./img/links/mail.svg"
+								alt="mail"> info@ipsum228.com</a></li>
+					<li class="footer__item contact-item"><a class="footer__item-link" href="https://vk.com/feed"
+							target="_blank"><img class="footer__item-img" src="./img/links/vk.svg" alt="vk"> Мы
+							вконтакте</a></li>
 				</ul>
 			</div>
 		</div>
