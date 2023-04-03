@@ -1,3 +1,8 @@
+/*----------------------------------- 
+
+			Меню
+
+-----------------------------------*/
 var burger = document.querySelector("#burger-menu");
 var menu = document.querySelector("#menuLinks");
 
@@ -10,7 +15,7 @@ function showMenu () {
 
 /*----------------------------------- 
 
-			плавный скролл
+			Плавный скролл
 
 -----------------------------------*/
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -74,9 +79,24 @@ function sliderRight(param) {
 	}
 }
 
-
 let timerId = setInterval(() => {
 	if (interal === true) {
 		sliderRight();
 	}
 }, 3000);
+
+
+
+/*----------------------------------- 
+
+			Отображение select
+
+-----------------------------------*/
+const select = document.querySelector("#select");
+const wrapSelect = document.querySelector("#wrap-select");
+const selectSpan = document.querySelector("#select-span");
+
+wrapSelect.onclick = function() {
+	select.classList.toggle("_show-select");
+	selectSpan.classList.toggle("_span-color");
+}
